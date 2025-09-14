@@ -35,9 +35,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "The happiest people don't have the best of everything, they make the best of everything."
     ],
     musicSuggestions: [
-      { title: "Good Vibrations", artist: "The Beach Boys" },
-      { title: "Happy", artist: "Pharrell Williams" },
-      { title: "Walking on Sunshine", artist: "Katrina and the Waves" }
+      { title: "Good Vibrations", artist: "The Beach Boys", url: "https://www.youtube.com/results?search_query=Good+Vibrations+The+Beach+Boys" },
+      { title: "Happy", artist: "Pharrell Williams", url: "https://www.youtube.com/results?search_query=Happy+Pharrell+Williams" },
+      { title: "Walking on Sunshine", artist: "Katrina and the Waves", url: "https://www.youtube.com/results?search_query=Walking+on+Sunshine+Katrina+and+the+Waves" }
     ]
   },
   calm: {
@@ -53,9 +53,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "The more tranquil a man becomes, the greater is his success."
     ],
     musicSuggestions: [
-      { title: "Weightless", artist: "Marconi Union" },
-      { title: "River Flows in You", artist: "Yiruma" },
-      { title: "Clair de Lune", artist: "Claude Debussy" }
+      { title: "Weightless", artist: "Marconi Union", url: "https://www.youtube.com/results?search_query=Weightless+Marconi+Union" },
+      { title: "River Flows in You", artist: "Yiruma", url: "https://www.youtube.com/results?search_query=River+Flows+in+You+Yiruma" },
+      { title: "Clair de Lune", artist: "Claude Debussy", url: "https://www.youtube.com/results?search_query=Clair+de+Lune+Claude+Debussy" }
     ]
   },
   energetic: {
@@ -71,9 +71,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "Energy is contagious. Either you affect people or you infect people."
     ],
     musicSuggestions: [
-      { title: "Eye of the Tiger", artist: "Survivor" },
-      { title: "Can't Stop", artist: "Red Hot Chili Peppers" },
-      { title: "Thunder", artist: "Imagine Dragons" }
+      { title: "Eye of the Tiger", artist: "Survivor", url: "https://www.youtube.com/results?search_query=Eye+of+the+Tiger+Survivor" },
+      { title: "Can't Stop", artist: "Red Hot Chili Peppers", url: "https://www.youtube.com/results?search_query=Can't+Stop+Red+Hot+Chili+Peppers" },
+      { title: "Thunder", artist: "Imagine Dragons", url: "https://www.youtube.com/results?search_query=Thunder+Imagine+Dragons" }
     ]
   },
   sad: {
@@ -89,9 +89,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "Even a happy life cannot be without a measure of darkness."
     ],
     musicSuggestions: [
-      { title: "Mad World", artist: "Gary Jules" },
-      { title: "The Sound of Silence", artist: "Simon & Garfunkel" },
-      { title: "Hurt", artist: "Johnny Cash" }
+      { title: "Mad World", artist: "Gary Jules", url: "https://www.youtube.com/results?search_query=Mad+World+Gary+Jules" },
+      { title: "The Sound of Silence", artist: "Simon & Garfunkel", url: "https://www.youtube.com/results?search_query=The+Sound+of+Silence+Simon+Garfunkel" },
+      { title: "Hurt", artist: "Johnny Cash", url: "https://www.youtube.com/results?search_query=Hurt+Johnny+Cash" }
     ]
   },
   anxious: {
@@ -107,9 +107,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "The greatest weapon against stress is our ability to choose one thought over another."
     ],
     musicSuggestions: [
-      { title: "Breathe Me", artist: "Sia" },
-      { title: "Anxiety", artist: "Julia Michaels" },
-      { title: "Be Still", artist: "The Killers" }
+      { title: "Breathe Me", artist: "Sia", url: "https://www.youtube.com/results?search_query=Breathe+Me+Sia" },
+      { title: "Anxiety", artist: "Julia Michaels", url: "https://www.youtube.com/results?search_query=Anxiety+Julia+Michaels" },
+      { title: "Be Still", artist: "The Killers", url: "https://www.youtube.com/results?search_query=Be+Still+The+Killers" }
     ]
   },
   creative: {
@@ -125,9 +125,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "The worst enemy to creativity is self-doubt."
     ],
     musicSuggestions: [
-      { title: "Bohemian Rhapsody", artist: "Queen" },
-      { title: "Across the Universe", artist: "The Beatles" },
-      { title: "Pure Imagination", artist: "Gene Wilder" }
+      { title: "Bohemian Rhapsody", artist: "Queen", url: "https://www.youtube.com/results?search_query=Bohemian+Rhapsody+Queen" },
+      { title: "Across the Universe", artist: "The Beatles", url: "https://www.youtube.com/results?search_query=Across+the+Universe+The+Beatles" },
+      { title: "Pure Imagination", artist: "Gene Wilder", url: "https://www.youtube.com/results?search_query=Pure+Imagination+Gene+Wilder" }
     ]
   },
   peaceful: {
@@ -143,9 +143,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "When the power of love overcomes the love of power, the world will know peace."
     ],
     musicSuggestions: [
-      { title: "Imagine", artist: "John Lennon" },
-      { title: "Three Little Birds", artist: "Bob Marley" },
-      { title: "What a Wonderful World", artist: "Louis Armstrong" }
+      { title: "Imagine", artist: "John Lennon", url: "https://www.youtube.com/results?search_query=Imagine+John+Lennon" },
+      { title: "Three Little Birds", artist: "Bob Marley", url: "https://www.youtube.com/results?search_query=Three+Little+Birds+Bob+Marley" },
+      { title: "What a Wonderful World", artist: "Louis Armstrong", url: "https://www.youtube.com/results?search_query=What+a+Wonderful+World+Louis+Armstrong" }
     ]
   },
   excited: {
@@ -161,9 +161,9 @@ export const moodConfig: Record<MoodType, MoodData> = {
       "Life is either a daring adventure or nothing at all."
     ],
     musicSuggestions: [
-      { title: "Can't Hold Us", artist: "Macklemore & Ryan Lewis" },
-      { title: "Shut Up and Dance", artist: "Walk the Moon" },
-      { title: "I Gotta Feeling", artist: "The Black Eyed Peas" }
+      { title: "Can't Hold Us", artist: "Macklemore & Ryan Lewis", url: "https://www.youtube.com/results?search_query=Can't+Hold+Us+Macklemore+Ryan+Lewis" },
+      { title: "Shut Up and Dance", artist: "Walk the Moon", url: "https://www.youtube.com/results?search_query=Shut+Up+and+Dance+Walk+the+Moon" },
+      { title: "I Gotta Feeling", artist: "The Black Eyed Peas", url: "https://www.youtube.com/results?search_query=I+Gotta+Feeling+The+Black+Eyed+Peas" }
     ]
   }
 };

@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { moodConfig, MoodType } from '@/types/mood';
 import { Card, CardContent } from '@/components/ui/card';
-import { Music, Quote } from 'lucide-react';
+import { Music, Quote, ExternalLink, Play } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface MoodDisplayProps {
   mood: MoodType | null;
@@ -11,7 +12,7 @@ interface MoodDisplayProps {
 
 export function MoodDisplay({ mood, moodText }: MoodDisplayProps) {
   const [randomQuote, setRandomQuote] = useState('');
-  const [randomMusic, setRandomMusic] = useState<{ title: string; artist: string } | null>(null);
+  const [randomMusic, setRandomMusic] = useState<{ title: string; artist: string; url?: string } | null>(null);
 
   useEffect(() => {
     if (mood) {
@@ -86,9 +87,23 @@ export function MoodDisplay({ mood, moodText }: MoodDisplayProps) {
                   <h4 className="font-semibold">Music Suggestion</h4>
                 </div>
                 {randomMusic && (
-                  <div>
-                    <p className="font-medium">{randomMusic.title}</p>
-                    <p className="text-sm text-muted-foreground">by {randomMusic.artist}</p>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="font-medium">{randomMusic.title}</p>
+                      <p className="text-sm text-muted-foreground">by {randomMusic.artist}</p>
+                    </div>
+                    {randomMusic.url && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full"
+                        onClick={() => window.open(randomMusic.url, '_blank')}
+                      >
+                        <Play className="w-4 h-4 mr-2" />
+                        Play on YouTube
+                        <ExternalLink className="w-3 h-3 ml-2" />
+                      </Button>
+                    )}
                   </div>
                 )}
               </CardContent>
